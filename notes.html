@@ -116,19 +116,24 @@
         <hr/>
 
         <form>
-            <label>Name <input type="text"/></label>
-            <label>Content <input type="text"/></label>
+            <label>Name <input type="text" name="name"/></label>
+            <label>Content <input type="text" name="content"/></label>
             <label>Category <select>
-                <option value={"Task"}>Task</option>
-                <option value={"Random_Thought"}>Random Thought</option>
-                <option value={"Idea"}>Idea</option>
-                <option value={"Quote"}>Quote</option>
+                <option value="Task">Task</option>
+                <option value="Random_Thought">Random Thought</option>
+                <option value="Idea">Idea</option>
+                <option value="Quote">Quote</option>
             </select></label>
 
-            <button>Create</button>
+            <button class="create">Create</button>
         </form>
 
         <button class="close-btn">X</button>
+    </div>
+
+    <div class="update-note-form">
+        <h2>New Note</h2>
+        <hr/>
     </div>
 
 </div>
@@ -159,7 +164,7 @@
 
 </div>
 
-<script type="module" src="./data/data.js"></script>
+<script type="module"  src="./data/data.js"></script>
 <script type="module" src="./notes/notes.js"></script>
 <script type="module" src="./summary/summary.js"></script>
 <script type="module" src="./archive/archive.js"></script>

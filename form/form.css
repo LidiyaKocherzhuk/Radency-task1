@@ -1,4 +1,5 @@
-.note-form {
+.note-form,
+.update-note-form {
     display: none;
 }
 
