@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="notes/notes.css">
+    <link rel="stylesheet" href="summary/summary.css">
+    <link rel="stylesheet" href="archive/archive.css">
+    <link rel="stylesheet" href="form/form.css">
+
+    <title>Radency task1</title>
+
+</head>
+<body>
+
+<div class="notes">
+    <h2>Notes</h2>
+
+    <table class="notes-table">
+
+        <thead>
+        <tr class="notes-table-header">
+            <th>
+            </th>
+            <th>
+                name
+            </th>
+            <th>
+                content
+            </th>
+            <th>
+                category
+            </th>
+            <th>
+                created
+            </th>
+            <th>
+                dates
+            </th>
+            <th>
+            </th>
+            <th>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-archive-fill" viewBox="0 0 16 16">
+                    <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
+                </svg>
+            </th>
+            <th>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-trash-fill" viewBox="0 0 16 16">
+                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                </svg>
+            </th>
+        </tr>
+        </thead>
+
+        <tbody class="notes-tbody">
+        </tbody>
+
+    </table>
+
+    <div class="btns">
+        <button class="create-note">Create Note</button>
+        <button class="show-archived-notes">Archive</button>
+    </div>
+
+    <div class="notesArchive">
+        <h2>Archived</h2>
+
+        <table class="notesArchive-table">
+
+            <thead>
+            <tr class="notesArchive-table-header">
+                <th>
+                </th>
+                <th>
+                    name
+                </th>
+                <th>
+                    content
+                </th>
+                <th>
+                    category
+                </th>
+                <th>
+                    created
+                </th>
+                <th>
+                    dates
+                </th>
+                <th>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-layer-forward" viewBox="0 0 16 16">
+                        <path d="M8.354.146a.5.5 0 0 0-.708 0l-3 3a.5.5 0 0 0 0 .708l1 1a.5.5 0 0 0 .708 0L7 4.207V12H1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H9V4.207l.646.647a.5.5 0 0 0 .708 0l1-1a.5.5 0 0 0 0-.708l-3-3z"/>
+                        <path d="M1 7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h4.5a.5.5 0 0 0 0-1H1V8h4.5a.5.5 0 0 0 0-1H1zm9.5 0a.5.5 0 0 0 0 1H15v2h-4.5a.5.5 0 0 0 0 1H15a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-4.5z"/>
+                    </svg>
+                </th>
+            </tr>
+            </thead>
+
+            <tbody class="archive-tbody">
+            </tbody>
+
+        </table>
+
+        <button class="close-archive-btn">Close</button>
+    </div>
+
+    <div class="note-form">
+        <h2>New Note</h2>
+        <hr/>
+
+        <form>
+            <label>Name <input type="text"/></label>
+            <label>Content <input type="text"/></label>
+            <label>Category <select>
+                <option value={"Task"}>Task</option>
+                <option value={"Random_Thought"}>Random Thought</option>
+                <option value={"Idea"}>Idea</option>
+                <option value={"Quote"}>Quote</option>
+            </select></label>
+
+            <button>Create</button>
+        </form>
+
+        <button class="close-btn">X</button>
+    </div>
+
+</div>
+
+<div class="notesSummary">
+    <h2>Note Summary</h2>
+
+    <table class="notesSummary-table">
+
+        <thead>
+        <tr class="notesSummary-table-header">
+            <th>
+                name
+            </th>
+            <th>
+                active
+            </th>
+            <th>
+                archived
+            </th>
+        </tr>
+        </thead>
+
+        <tbody class="summary-tbody">
+        </tbody>
+
+    </table>
+
+</div>
+
+<script type="module" src="./data/data.js"></script>
+<script type="module" src="./notes/notes.js"></script>
+<script type="module" src="./summary/summary.js"></script>
+<script type="module" src="./archive/archive.js"></script>
+<script type="module" src="./action/action.js"></script>
+<script type="module" src="./form/form.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous">
+
+</script>
+</body>
+</html>

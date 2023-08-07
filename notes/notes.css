@@ -1,0 +1,70 @@
+table, th, td {
+    border-collapse: collapse;
+    padding: 0 3px;
+}
+
+th:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+th:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+tr:first-child th:first-child {
+    border-top-left-radius: 5px;
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: 5px;
+}
+.notes {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.notes-table {
+    width: 90%;
+}
+
+.notes-table-header {
+    background: silver;
+    height: 50px;
+}
+
+tbody tr {
+    background: #c3e0d2;
+    border-top: 10px solid white;
+    height: 40px;
+}
+
+.btns {
+    width: 90%;
+    text-align: end;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 10px;
+}
+
+button {
+    padding: 5px 25px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #dedede;
+}
